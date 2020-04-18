@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+#main {
+	margin: 40px;
+	font-family: Source Sans Pro;
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 67px;
+	font-family: Playfair Display;
+
+}
+
+.col-sm-6 {
+	height: 100px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	text-align: center;
+}
+
+.buttons {
+	text-align: center;
+}
+
+#add-button, #find-button {
+	background-color: #4CAF50;
+	padding: 14px 25px;
+	border-radius: 4px;
+	width: 32%;
+	font-size: 27px;
+	display: inline-block;
+	margin: 20px;
+}
+
+
+.form-group {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.checkboxes {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.radio-button {
+	margin: 15px;
+}
+
+.check-box {
+	margin: 15px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 34px;
+	font-family: Playfair Display;
+	margin-top: 25px;
+	text-decoration: underline;
+}
+
+#manual-entry {
+	padding: 30px 60px;
+	font-family: Source Sans Pro;
+}
+
+#photo-entry {
+	padding: 200px 60px;
+	font-family: Source Sans Pro;
+}
+
+h3 {
+	font-size: 68px;
+	padding-left: 7px;
+	font-family: Playfair Display;
+}
+
+h4 {
+	font-size: 44px;
+	font-family: Playfair Display;
+	padding: 12px;
+}
+
+.form-group {
+	font-size: 25px;
+	font-family: Playfair Display;
+}
+
+#add-btn, #continue-btn {
+	font-size: 20px
+}
+
+#p-entry, #m-entry {
+	font-size: 22px;
+}
+
+.button-form {
+	padding: 15px;
+}
+
+a {
+	color: #35a02b;
+	font-size: 24px;
+	margin-left: 10px;
+}
+
+a:hover {
+	color: #1c4c17;
+}
+
+#trending-events {
+	text-align: center;
+	margin: 20px 10px;
+}
+
+.event {
+	border-bottom: 2px solid #35a02b;
+}
+
+.event h6 {
+	font-size: 27px;
+	font-style: bold;
+}
+
+#camera, #camera--view, #camera--sensor, #camera--output{
+    position: fixed;
+    height: 40%;
+    width: 50%;
+    object-fit: cover;
+}
+#camera--view, #camera--sensor, #camera--output{
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+.camera--div {
+    padding-left: 30%;
+    margin-top: 50px;
+}
+h3 {
+    padding-top: 8px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 44px;
+    font-family: Playfair Display;
+}
+#space-filler {
+    padding-top: 200px;
+}
+#camera--trigger{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 80px;
+    left: calc(50% - 100px);
+}
+#wrapper {
+    text-align: center;
+}
+#pic-form {
+    display: inline-block;
+}
+#image-form {
+    position: fixed;
+    color: white;
+    font-size: 14px;
+    padding: 15px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 37%;
+}
+#submit-button {
+    background-color: #4CAF50;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 17px;
+    display: inline-block;
+    margin: 20px;
+}
+.taken{
+    height: 100px!important;
+    width: 100px!important;
+    transition: all 0.5s ease-in;
+    border: solid 3px white;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;  /* The height is 400 pixels */
+	width: 100%;  /* The width is the width of the web page */
+	margin: 25px;
+}
+
+#floating-panel {
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+#list-of-events {
+	font-size: 48px;
+}
+
+#submit {
+	background-color: #4CAF50;
+	color: black;
+	border: none;
+}

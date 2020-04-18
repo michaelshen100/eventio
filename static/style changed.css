@@ -1,0 +1,122 @@
+mport url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+#main {
+	margin: 200px;
+	font-family: Source Sans Pro;
+}
+
+h1 {
+	text-align: center;
+	font-size: 67px;
+	font-family: Playfair Display;
+	margin-bottom: 20px;
+}
+
+.col-sm-6 {
+	height: 100px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	text-align: center;
+}
+
+.buttons {
+	text-align: center;
+}
+
+#add-button, #find-button {
+	background-color: #4CAF50;
+	padding: 14px 25px;
+	border-radius: 4px;
+	width: 32%;
+	font-size: 27px;
+	display: inline-block;
+	margin: 20px;
+}
+
+
+.form-group {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.checkboxes {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.radio-button {
+	margin: 15px;
+}
+
+.check-box {
+	margin: 15px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 34px;
+	font-family: Playfair Display;
+	margin-top: 25px;
+}
+
+#trending-events {
+	text-align: center;
+	margin: 20px 10px;
+}
+
+.event h6 {
+	font-size: 20px;
+	font-style: bold;
+}
+
+#camera, #camera--view, #camera--sensor, #camera--output{
+    position: fixed;
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+#camera--view, #camera--sensor, #camera--output{
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+
+.camera--div {
+	padding-left: 30%;
+}
+
+h1 {
+	padding-top: 8px;
+	padding-bottom: 65px;
+}
+
+#space-filler {
+	padding-top: 100px;
+}
+#camera--trigger{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 30px;
+    left: calc(50% - 100px);
+}
+.taken{
+    height: 100px!important;
+    width: 100px!important;
+    transition: all 0.5s ease-in;
+    border: solid 3px white;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}

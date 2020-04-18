@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Event.io</title>
+
+  <!-- may be extra/unecessary -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/notify.js"></script>
+  <script type="text/javascript" src="js/spin.js"></script>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+ </head>
+
+ <body>
+  <div id="photo-entry">
+    <h3 class="subtitle">Use a Photo</h3>
+    <div class="modal-body">
+      <form action="{{ url_for('photo_to_manual_find') }}" enctype=multipart/form-data method="POST">
+        <div class="row">
+          <div class="col-sm-5">
+            <h5>Take a Picture</h5>
+              <a href="/video">Go To Camera</a>
+          </div>
+          <div class="col-sm-7">
+            <h5>Upload a Picture</h5>
+            <div class="form-group">
+              <input type="file" class="form-control" id="photo" name="photo">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" id="continue-btn">Continue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+ </body>
+

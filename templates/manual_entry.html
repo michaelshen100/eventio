@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Event.io</title>
+
+  <!-- may be extra/unecessary -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/notify.js"></script>
+  <script type="text/javascript" src="js/spin.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+ </head>
+
+ <body>
+  <div id="manual-entry">
+   	<h3 class="subtitle">Manual Input</h3>
+    <form action="{{ url_for('test_api_request') }}" enctype=multipart/form-data method="POST">
+      <div class="form-group">
+        <label for="name">Event Name</label>
+        <input type="text" class="form-control" id="name" value="{{ event_name }}" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" id="description" rows="3" name="description" value="{{ event_description }}" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" class="form-control" id="location" placeholder="i.e. Cory 540" name="location" value="{{ event_location }}" required>
+      </div>
+      <div class="form-group">
+        <label for="start-time">Date / Time</label>
+        <input type="text" class="form-control" id="date-time" name="date-time" value="{{ event_date_time }}" required>
+      </div>
+      <div class="form-group">
+        <label for="cost">Cost</label>
+        <input type="number" class="form-control" id="cost" placeholder="20" name="cost" value="{{ event }}" required>
+      </div>
+      <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" id="add-btn">Add</button>
+      </div>
+    </form>
+    </div>
+
+ </body>
